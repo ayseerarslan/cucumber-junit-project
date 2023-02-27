@@ -7,7 +7,7 @@ Feature: Library Login Feature
   Background: For all scenarios user is on the login page of the library application
     Given user is on the login page of the library application
 
-@librarian @smoke
+@librarian
   Scenario: Login as librarian
     When user enters librarian username
     And user enters librarian password

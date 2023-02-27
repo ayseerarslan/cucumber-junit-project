@@ -3,7 +3,7 @@ Feature: Etsy Title Verifications
 
   Background:
     Given user is on etsy home page
-
+@smoke
   Scenario: Etsy title verification
     Given user sees title is as expected.
 

@@ -1,6 +1,6 @@
 Feature: Verifying buttons feature of the application
 
-  @smoke
+  @smoke @wip
   Scenario: Check different button actions
     Given Navigate to "buttons" page
     When  Double click on button

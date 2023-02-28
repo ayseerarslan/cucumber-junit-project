@@ -30,7 +30,7 @@ Feature: Cucumber Data Tables implementation practices
       | state   | CA        |
       | zipcode | 99999     |
 
-  @dataTable
+
   Scenario: verify user should be able to see all 12 months in months dropdown
     Given user is on the dropdowns page of practice tool
     Then user should see below info in month dropdown

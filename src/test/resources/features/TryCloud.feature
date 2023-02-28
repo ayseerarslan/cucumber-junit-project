@@ -7,7 +7,7 @@ Feature: Managing File page
     And user clicks the Settings in the Files page.
     Then user should see there are three checkboxes under the Settings.
 
-  @tryCloud
+
   Scenario: Verify users can check any checkbox option.
     Given user on the login page and enter valid credentials
     And user clicks the Files on the Home page.

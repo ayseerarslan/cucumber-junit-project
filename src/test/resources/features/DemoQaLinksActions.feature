@@ -1,5 +1,5 @@
 Feature: Links actions feature
-  @smoke
+
   Scenario Outline:Getting different responses by different links
     Given Navigate to "links" page
     When the user clicks to "<link>"

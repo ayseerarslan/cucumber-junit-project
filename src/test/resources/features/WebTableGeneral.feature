@@ -1,5 +1,5 @@
 Feature: Some of the general functionality verifications
-@smoke
+
   Scenario: Dropdown options verification
     Given user is already logged in to The Web table app
     When user is on the Order page

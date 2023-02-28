@@ -16,7 +16,7 @@ Feature: Wikipedia Search
   Scenario: Verify Wikipedia search functionality image header verification
     Given user sees "Steve Jobs" is in the image header
 
-  @scenarioOutline
+
   Scenario Outline: Wikipedia Search Functionality with Scenario Outline
     Given user is on Wikipedia home page
     When user types "<searchValue>" in the wiki search box
@@ -25,7 +25,7 @@ Feature: Wikipedia Search
     Given user sees "<expectedMainHeader>" is in the main header
     Given user sees "<expectedImageHeader>" is in the image header
 
-    @ceos
+
     Examples: search values we are going to be using in this scenario outlines
       | searchValue     | expectedTitle   | expectedMainHeader | expectedImageHeader |
       | Steve Jobs      | Steve Jobs      | Steve Jobs         | Steve Jobs          |
@@ -33,7 +33,7 @@ Feature: Wikipedia Search
       | Rosalind Brewer | Rosalind Brewer | Rosalind Brewer    | Rosalind Brewer     |
       | Sundar Pichai   | Sundar Pichai   | Sundar Pichai      | Sundar Pichai       |
 
-    @scientists
+
     Examples:
       | searchValue     | expectedTitle   | expectedMainHeader | expectedImageHeader |
       | Marie Curie     | Marie Curie     | Marie Curie     | Marie Curie     |

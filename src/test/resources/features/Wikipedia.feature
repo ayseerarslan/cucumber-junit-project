@@ -6,7 +6,7 @@ Feature: Wikipedia Search
     Given user is on Wikipedia home page
     When user types "Steve Jobs" in the wiki search box
     Then user clicks wiki search button
-
+@smoke
   Scenario: Verify Wikipedia search functionality title verification
     Given user sees "Steve Jobs" is in the wiki title
 

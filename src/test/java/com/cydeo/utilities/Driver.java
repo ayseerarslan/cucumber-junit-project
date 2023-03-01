@@ -63,6 +63,8 @@ public class Driver {
                 case "chrome-headless":
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("--headless");
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
@@ -97,6 +99,8 @@ public class Driver {
                     driver = new SafariDriver();
                     break;
             }
+
+                driver.manage();
         }
 
         return driver;

@@ -4,7 +4,7 @@ Feature: Google search functionality
 
   Background: go to Google
     When user is on the Google search page
-@test
+
   Scenario: Search page default title verification
     When user search for "apple" in Google Search
     Then user should see "apple" in the Google title

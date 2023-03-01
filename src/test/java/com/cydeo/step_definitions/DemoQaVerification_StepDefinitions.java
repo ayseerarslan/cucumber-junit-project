@@ -25,7 +25,7 @@ public class DemoQaVerification_StepDefinitions {
     public void navigate_to_page(String string) {
         elementsPage.goToElementPage();
 
-        // ElementClickInterceptedException verdigi icin try catch
+        // chrome-headless ile kullanildiginda ElementClickInterceptedException verdigi icin try catch
         for (WebElement each : elementsPage.mainMenuButtons) {
             if (each.getText().equalsIgnoreCase(string)) {
                 try {

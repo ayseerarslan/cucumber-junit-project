@@ -12,14 +12,18 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
 public class WebTableGeneral_StepDefinitions {
 
     WebTables_OrderPage webTables_orderPage = new WebTables_OrderPage();
+
 
     @Given("user is already logged in to The Web table app")
     public void user_is_already_logged_in_to_the_web_table_app() {
@@ -29,6 +33,8 @@ public class WebTableGeneral_StepDefinitions {
     }
     @When("user is on the Order page")
     public void user_is_on_the_order_page() {
+
+        //wait.until(ExpectedConditions.elementToBeClickable(webTables_orderPage.orderLink));
         webTables_orderPage.orderLink.click();
         BrowserUtils.sleep(1);
     }

@@ -1,0 +1,11 @@
+file:src/test/resources/features/TryCloud.feature:4:11
+file:src/test/resources/features/DemoQaLinksActions.feature:9:10:11:12:13:14:15
+file:src/test/resources/features/GoogleSearch.feature:8
+file:src/test/resources/features/DataTables.feature:4:16:24:34
+file:src/test/resources/features/BingSearch.feature:9
+file:src/test/resources/features/Wikipedia.feature:10:13:16:31:32:33:34:39:40
+file:src/test/resources/features/EtsyTitleVerification.feature:7:10:15:27:28:29:30
+file:src/test/resources/features/DemoQaVerifying.feature:4
+file:src/test/resources/features/WebTableGeneral.feature:3:11:18:53:54:55:56:57
+file:src/test/resources/features/Login.feature:11:17:23
+file:src/test/resources/features/WebTableLoginScenario.feature:3:12:18

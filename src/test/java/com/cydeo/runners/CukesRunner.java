@@ -18,8 +18,8 @@ import org.junit.runner.RunWith;
         glue = "com/cydeo/step_definitions",
         dryRun = false,
         tags = "",
-        publish = true // generating a report with public link
-        //monochrome = true;
+        publish = true, // generating a report with public link
+        monochrome = true
 
 )
 public class CukesRunner {}

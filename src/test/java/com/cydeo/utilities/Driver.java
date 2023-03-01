@@ -1,6 +1,7 @@
 package com.cydeo.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -62,12 +63,11 @@ public class Driver {
                     break;
                 case "chrome-headless":
                     WebDriverManager.chromedriver().setup();
-                    ChromeOptions options = new ChromeOptions();
-                    options.addArguments("--headless");
 
-                    driverPool.set(new ChromeDriver(new ChromeOptions().setHeadless(true)));
+                    driverPool.set( new ChromeDriver(new ChromeOptions().setHeadless(true)));
 
                     break;
+
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
                     driverPool.set(new FirefoxDriver());
@@ -101,6 +101,7 @@ public class Driver {
                     driverPool.set(new SafariDriver());
                     break;
             }
+            driverPool.get().manage().window().setSize(new Dimension(1280, 920));
         }
 
         return driverPool.get();

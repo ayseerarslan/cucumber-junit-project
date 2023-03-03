@@ -12,7 +12,7 @@ Feature: Cucumber Data Tables implementation practices
       | eggplant   |
 
     # to beautify the pipes: cmnd + opt + L
-
+@wip
   Scenario: List of pets we love
     Then I will share my favorites
       | cat   |

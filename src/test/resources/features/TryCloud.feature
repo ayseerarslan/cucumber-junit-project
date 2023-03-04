@@ -1,3 +1,4 @@
+@regression
 Feature: Managing File page
   Agile story: As a user, I should be able to manage what to show in the Files page with the settings.
 

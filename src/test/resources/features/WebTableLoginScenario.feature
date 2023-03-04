@@ -1,3 +1,4 @@
+@regression
 Feature: Web Table app login functionality
 
   Scenario: Positive login scenario (hard coded)

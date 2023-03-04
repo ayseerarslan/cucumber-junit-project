@@ -1,3 +1,4 @@
+@regression
 Feature: Links actions feature
 
   Scenario Outline:Getting different responses by different links
